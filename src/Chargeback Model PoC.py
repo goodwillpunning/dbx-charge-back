@@ -3,7 +3,7 @@ import requests
 
 # Globals
 databricks_workspace_url = "https://<ACCOUNT_NAME>.cloud.databricks.com/"
-api_token = "REPLACE_ME"
+api_token = dbutils.secrets.get("dev", "api_token")
 warehouses = [ "5badc23414", "42lkj2390190" ]
 
 # COMMAND ----------
